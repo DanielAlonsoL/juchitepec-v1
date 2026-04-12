@@ -1,0 +1,72 @@
+/* css/styles.css */
+
+/* ... tus estilos anteriores (body, hero-title, img-custom) ... */
+
+body {
+    background-color: #f3e5f5;
+}
+
+/* css/styles.css */
+
+.hero-title {
+    color: #d32f2f;
+    font-size: 3.5rem;
+    font-weight: bold;
+    display: inline-block; /* Importante para que la transformación funcione bien */
+    transition: all 0.3s ease; /* Hace que el regreso a la normalidad sea suave */
+    cursor: pointer;
+}
+
+/* El efecto al pasar el ratón */
+.hero-title:hover {
+    transform: scale(1.1); /* Agranda el título un 10% */
+    text-shadow: 0px 10px 20px rgba(211, 47, 47, 0.3); /* Crea un resplandor rojo */
+    letter-spacing: 2px; /* Separa un poco las letras */
+}
+
+.img-custom {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    /* Transición suave para cuando saques el ratón */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+/* --- NUEVOS EFECTOS DE INTERACCIÓN (HOVER) --- */
+
+/* Efecto al pasar el ratón sobre CUALQUIER imagen o tarjeta con esta clase */
+.img-hover-effect:hover {
+    transform: translateY(-5px) scale(1.02); /* Sube un poco y se agranda */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important; /* Sombra más pronunciada */
+}
+
+/* Animación sutil extra para los enlaces del menú al pasar el ratón */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f3e5f5; /* Color lila */
+    transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* Subrayado animado */
+}
+
+/* Estilo para el contenedor del mapa */
+.ratio {
+    border: 3px solid #fff; /* Marco blanco para que resalte sobre el fondo lila */
+    transition: transform 0.3s ease;
+}
+
+.ratio:hover {
+    transform: translateY(-5px); /* Pequeño salto al pasar el cursor como las imágenes */
+}
