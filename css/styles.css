@@ -6,6 +6,11 @@
     --soft-purple: #7b2cbf;
     --bg-gradient: linear-gradient(135deg, #fdfcfb 0%, #e2d1f9 100%);
     --accent-gold: #f4d03f;
+
+    --rosa-principal: #ff2d75;
+    --rosa-suave: #ff85a2;
+    --purpura-oscuro: #4a148c;
+    --dorado-brillante: #f4d03f;
 }
 
 body {
@@ -13,6 +18,11 @@ body {
     background-attachment: fixed;
     font-family: 'Segoe UI', Roboto, sans-serif;
     color: #4a4a4a;
+}
+
+.body-index {
+    background-color: #fffafb; /* Un blanco con un toque mínimo de rosa */
+    color: #444;
 }
 
 /* Fondo decorativo UI/UX con círculos difuminados (Blurry Orbs) */
@@ -95,6 +105,48 @@ footer {
     cursor: pointer;
 }
 
+.hero-title-index {
+    background: linear-gradient(45deg, var(--purpura-oscuro), var(--rosa-principal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 3.8rem;
+}
+
+.h2-index {
+    color: var(--rosa-principal);
+    font-weight: 700;
+}
+
+.h3-index {
+    color: var(--rosa-principal);
+    font-weight: 700;
+}
+
+.border-bottom-pink {
+    border-bottom: 3px solid var(--rosa-principal) !important;
+    display: inline-block;
+}
+
+.strong-index {
+    color: var(--purpura-oscuro);
+
+}
+
+.b-index {
+    color: var(--purpura-oscuro);
+}
+
+.navbar-index {
+    background: linear-gradient(135deg, var(--purpura-oscuro) 0%, var(--rosa-principal) 100%) !important;
+}
+
+.main-index.shadow {
+    background: white;
+    border-radius: 30px;
+    border-top: 5px solid var(--rosa-principal);
+}
+
 /* El efecto al pasar el ratón */
 .hero-title:hover {
     transform: scale(1.1); /* Agranda el título un 10% */
@@ -127,4 +179,39 @@ footer {
 
 .ratio:hover {
     transform: translateY(-5px); /* Pequeño salto al pasar el cursor como las imágenes */
+}
+
+.card-custom-index {
+    background: #fff0f5; /* Lavanda/Rosa muy claro */
+    border-left: 5px solid var(--rosa-principal);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card-custom-index:hover {
+    transform: translateY(-5px);
+}
+
+.text-accent-pink {
+    color: var(--rosa-principal) !important;
+    font-weight: bold;
+}
+
+/* Footer con estilo */
+.footer-index {
+    background: linear-gradient(135deg, #2d0a4e 0%, var(--purpura-oscuro) 100%);
+    border-top: 4px solid var(--dorado-brillante);
+}
+
+/* Elementos flotantes decorativos (Orbs) */
+.bg-ornaments-index .orb-index {
+    filter: blur(60px);
+    opacity: 0.4;
+    position: fixed;
+    z-index: -1;
+}
+
+/* Personalización de los iconos de la lista */
+.list-unstyled li b {
+    color: var(--rosa-principal);
 }
